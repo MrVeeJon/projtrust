@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/hero-bg.jpg'); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
